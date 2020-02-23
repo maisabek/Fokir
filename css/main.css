@@ -1,0 +1,1038 @@
+*{
+	margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+/* start navbar */
+.navbar{
+    background: rgb(15, 15, 15);
+	width:100%;
+	position:fixed;
+	z-index: 2;
+}
+.navbar li a{
+    color:white;
+    padding: 2px;
+    text-decoration:none;
+	font-family: 'Droid Sans' , sans-serif;
+	font-size:16px;
+    line-height: 30px;
+    transition: all .5s ;
+}
+.navbar li a:hover{
+    color: red;
+}
+.hov1{
+    margin-top: -19px;
+    margin-right: 146px;
+}
+.hov1 li{
+    list-style-type: none;
+    float: right;
+    padding: 6px;
+}
+.hov1 .first-item a{
+    color:red;
+}
+.hov1 a .alt-color{
+color: red;
+}
+.red
+{
+    color:red;
+}
+/* end navbar */
+/* start header */
+.header{
+    background-image: url(../images/slider/slider-01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 850px;
+    position: relative;
+}
+.overlay{
+    background-color: rgba(44, 43, 43, 0.6);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.header-h2{
+    color: white;
+    font-weight: lighter;
+    font-family: 'Sacramento',cursive;
+    animation:MoveInLeft 4s ease-out;
+}
+.developer{
+display: none;
+}
+.developer,.designer{
+    color: white;
+    font-family: 'Droid Sans' , sans-serif;
+	font-size:20px;
+    line-height: 30px;
+}
+.para1{
+    color: rgb(252, 86, 86);
+    font-family: 'Droid Sans' , sans-serif;
+	font-size:60px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-left: -112px;
+    animation:MoveInRight 4s ease-out;
+}
+.para2{
+    color: white;
+    font-family: 'Droid Sans' , sans-serif;
+	font-size:20px;
+    line-height: 30px;
+    margin-left: -63px
+}
+@keyframes MoveInLeft{
+    0%{opacity: 0;}
+    100%{opacity: 1;}}
+    @keyframes Movepara{
+        0%{opacity: 0;transform: translate(-70%);}
+        100%{opacity: 1;transform: translate(0);}}
+ @keyframes MoveInRight{
+        0%{opacity: 0;transform: translate(50%);}
+        100%{opacity: 1;transform: translate(0);}}
+.para2,.designer{
+    float: left;
+}
+/* end header */
+/* start hello */
+.image,.paragraph{
+    float: left;
+}
+.image{
+    width: 350px;
+    height: 420px;
+    border: 10px solid rgb(82, 79, 79);
+    margin-left: 167px;
+    margin-top: 87px;
+    animation:Movepara 8s ease-out;
+}
+.image1 img{
+    margin-left: 22px;
+    margin-top: 22px;
+    overflow: visible;
+}
+.image1{
+    position: absolute;
+}
+.hover{
+    width: 361px;
+    height: 441px;
+    position: relative;
+    margin-left: 23px;
+    margin-top: 23px;
+    top:0px;
+    left: 0px;
+    background-color: rgba(48, 43, 43, 0.6);
+    opacity: 0;
+    transition: all .5s;
+}
+.image:hover .hover{
+    opacity: 1;
+    bottom: 100%;
+}
+.hover .icons li {
+list-style-type: none;
+float: left;
+}
+.hover .icons .fa-facebook,
+.hover .icons .fa-yahoo,
+.hover .icons .fa-linkedin,
+.hover .icons .fa-twitter{
+    width: 30px;
+    height: 21px;
+    border-radius: 50%;
+    transition: all 0.4s linear;
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+    overflow: hidden;
+    color: white;
+    padding: 100px;
+    font-size: 24px;
+    margin-top: 130px;
+    margin-left: -170px;
+}
+.paragraph{
+    width:800px;
+    animation:MoveInRight 8s ease-out;
+}
+.paragraph1{
+    font-family: 'Droid Sans' , sans-serif;
+    margin-left: 105px;
+    margin-top:82px;
+    padding: 25px;
+    border-bottom: 3px dotted gray;
+    font-size: 17px;
+    color: rgb(158, 150, 150);
+}
+.i{
+    color: rgb(248, 80, 80);
+}
+.paragraph1-h2{
+    color: rgb(65, 62, 62);
+    font-family: 'Droid Sans' , sans-serif;
+}
+.paragraph2{
+    margin-left: 128px;
+    margin-top: 11px;
+    padding: 20px;
+}
+.paragraph21,.paragraph22{
+    float: left;
+}
+.paragraph21{
+font-family: 'Droid Sans' , sans-serif;
+font-size: 16px;
+padding: 10px;
+color: gray;
+}
+.paragraph22{
+    font-family: 'Droid Sans' , sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 100px;
+    color: gray;
+}
+.paragraph2-span{
+    font-family: 'Droid Sans' , sans-serif;
+    font-weight: bold;
+    color: grey;
+    font-size: 17px;
+}
+.button{
+    margin-left: 154px;
+    margin-top: 80px;
+}
+.btn1,.btn2{
+    float: left;
+}
+.btn2 button{
+    margin-left: 30px;
+}
+.btn1 button,.btn2 button{
+    border-radius: 4px;
+    width: 200px;
+    color: white;
+    border: none;
+    height: 40px;
+    background-color: rgb(248, 80, 80);
+    transition: all .5s ease-in;
+}
+.btn1 button:hover,.btn2 button:hover{
+    background-color: rgb(163, 24, 24); 
+}
+/* end hello */
+/* start services */
+.services{
+    position: absolute;
+    margin-top: 133px;
+    background-color:rgb(238, 236, 236);
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+.services-container{
+    margin-left: 40px;
+    
+}
+.services .services-h2{
+    color: rgb(10, 10, 10);
+    text-align: center;
+    margin-top: -10px;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Droid Sans' , sans-serif;
+}
+.hr{
+    margin-left: 18px;
+    margin-top: 10px;
+}
+ .hr1,.hr3{
+    margin-top: 4px;
+    width: 82px;
+    height: 1px;
+    background-color: red;
+    margin-left: 630px;
+} 
+.hr2{
+    margin-top: 4px;
+    width: 150px;
+    height: 1px;
+    background-color: red;
+    margin-left: 598px;
+}
+.services p{
+    text-align: center;
+    color: grey;
+    font-family: 'Droid Sans' , sans-serif;
+    margin-bottom: 50px;
+
+}
+.ser1,.ser2,.ser3,.ser4{
+    padding: 5px;
+    float: left;
+    width: 24%;
+    margin-top: 60px;
+    transition: all .3s ease-in;
+}
+ .fa-pencil,.fa-address-card-o,.fa-address-book,.fa-id-card-o{
+   margin-left: 150px;
+   color: rgb(248, 80, 80);
+   text-align: center;
+   font-size: 30px;
+   margin-top: 26px
+
+}
+.ser-h2{
+    color: rgb(73, 70, 70);
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Droid Sans' , sans-serif;
+}
+.ser1:hover,.ser2:hover,.ser3:hover,.ser4:hover{
+    background: rgb(255, 251, 251);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+/* end services */
+/* start tab */
+.protoflio{
+    background-color: white;
+    padding: 283px 0;
+    font-size: 18px;
+    /* margin-left: -300px; */
+}
+.protoflio-container{
+margin-top: 380px;
+margin-left: 300px;
+}
+.protoflio-hr{
+margin-left: -275px;
+margin-top: 10px;
+}
+.protoflio-h2{
+    font-family: 'Droid Sans' , sans-serif;
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+    padding-top: 138px;
+    text-align: center;
+    margin-left: -340px;
+}
+.protoflio .info-list li{
+    display: inline-block;
+    background-color: white;
+    padding: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.protoflio .info-list li.selected{
+    background-color: #fff;
+    color: red;
+    font-family: 'Droid Sans' , sans-serif;
+    margin-top: 60px;
+    font-size: 18px;
+    /* margin-left: 100px; */
+}
+.protoflio .info-list li{
+    font-size: 18px;
+}
+.protoflio .info-content > div{
+    padding: 10px;
+    background-color: #fff;
+    line-height: 2;
+}
+
+/* div:not(:first-of-type)
+info-content div */
+/* .protoflio .info-content{ */
+    .history,.specification,.technical,.review{
+    display: none;
+}
+.card1,.card2,.card3{
+    float: left;
+}
+.about,.history{
+    margin-left: -106px;
+}
+.about-image img{
+    width: 100%;
+}
+.about-image{
+    position: absolute;
+    width: 300px;
+    margin: 10px;
+}
+.back{
+    width: 300px;
+    height: 224.3px;
+    position: relative;
+    top:0px;
+    left: 0px;
+    margin: 10px;
+    background-color: rgba(48, 43, 43, 0.6);
+    transition: all .5s;
+    opacity: 0;
+}
+.card1:hover .back,.card2:hover .back,.card3:hover .back{
+    opacity: 1;
+}
+.fa-file-image-o,.fa-filter,.fa-file-video-o{
+    color: red;
+    margin-top: 200px;
+    margin-left: 266px;
+}
+/* end tab */
+/* start information */
+.information{
+    background-color: rgb(238, 236, 236);
+    margin-top: 70px;
+    margin-bottom: 10px;
+    padding: 150px;
+}
+.information1,.information2,.information3,.information4{
+    float: left;
+    margin-left: 160px;
+}
+@keyframes bounceIn {
+    from, 20%, 40%, 60%, 80%, to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3, .3, .3);
+      transform: scale3d(.3, .3, .3);
+    }
+    20% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+      -webkit-transform: scale3d(.9, .9, .9);
+      transform: scale3d(.9, .9, .9);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: scale3d(1.03, 1.03, 1.03);
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+      -webkit-transform: scale3d(.97, .97, .97);
+      transform: scale3d(.97, .97, .97);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+.fa-users,.fa-files-o,.fa-cloud-download,.fa-coffee{
+    color: rgb(248, 80, 80);
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 33px;
+}
+.information-h2{
+    color: black;
+    font-size: 30px;
+    font-family: 'Droid Sans' , sans-serif;
+    font-weight: bold;
+}
+.information p{
+    margin-left: -20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: gray;
+}
+/* end information */
+/* start feedback */
+
+
+/* .feedback{
+    background-image: url(../images/animated-bg.png);
+    animation:animatedBackground 10s linear infinite ; 
+} */
+.feedback-container{
+    margin-left: 25%;
+}
+.feedback-h2{
+    color: black;
+    text-align: center;
+    margin-top: 70px;
+    /* margin-bottom: 97px; */
+    margin-left: -321px;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Droid Sans' , sans-serif;
+}
+.feedback-hr{
+    margin-top: 10px;
+margin-left: -299px;
+margin-bottom: 75px;
+}
+.content2{
+    /* display: none; */
+}
+.content1,.content2{
+    width: 70%;
+    background-color: rgb(238, 236, 236);
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    padding-right: 40px;
+}
+.content1 img,.content2 img{
+    border-radius: 50%;
+}
+.content1-h2,.content1 img{
+float: left;
+}
+.content2-h2,.content2 img{
+    float: left;
+    }
+.content1-h2{
+    color: black;
+    margin-left: 20px;
+}
+.content2-h2{
+    color: black;
+    margin-left: 20px;
+}
+.content1 p,.content2 p{
+    color: gray;
+    margin-left: 170px;
+}
+.fa-star1{
+    text-align: center;
+    margin-left: 170px;
+    color: goldenrod;
+}
+.fa-star,.fa-star-o{
+    color: goldenrod; 
+}
+.ul{
+    margin-bottom: 128px;
+}
+.li1,.li2{
+    float: left;
+    padding: 7px;
+    font-size: 35px;
+    color: red;
+}
+.li1{
+    margin-left: 300px;
+}
+/* end feedback */
+/* start blog */
+.blog{
+    position: absolute;
+    background-color: rgb(238, 236, 236);
+    padding: 50px;
+
+}
+@keyframes animatedBackground{
+    from{background-position:0 0}
+    to{background-position:100% 0}}
+.blog-h2{
+    color: black;
+    margin-left: 540px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Droid Sans' , sans-serif;
+}
+.blog-hr{
+margin-left: -66px;
+    margin-top: -43px;
+    margin-bottom: 55px;
+}
+.blog1 a,.blog2 a,.blog3 a{
+    cursor: pointer;
+
+    transition: all .5s ease-in-out;
+}
+.blog1 a:hover,.blog2 a:hover,.blog3 a:hover{
+    color:red;
+}
+.blog-container{
+    margin-left: 5%;
+    margin-top: 50px;
+}
+.blog1 img,.blog2 img ,.blog3 img{
+    width: 100%;
+}
+.blog1,.blog2,.blog3{
+    float: left;
+    width: 30%;
+    background-color: white;
+    margin: 1%;
+    animation:fadeInUp 22s ease-out;
+}
+.blog2{
+    animation:fadeInUp 24s ease-out;
+
+}
+.blog3{
+    animation:fadeInUp 26s ease-out;
+}
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+.blog p{
+    color: gray;
+    /* margin: 15px; */
+    font-family: 'Droid Sans' , sans-serif;
+    /* padding: 10px; */
+    margin-left: 15px;
+
+}
+.blog a{
+    font-family: 'Droid Sans' , sans-serif;
+    font-size: 18px;
+    line-height: 60px;
+    color: rgb(51, 51, 51);
+    margin-left: 20px;
+}
+.read{
+    font-weight: bold;
+    font-size: 18px;
+}
+.para{
+    padding-top: 19px;
+}
+/* end blog */
+/* start contact */
+.contact{
+    position: absolute;
+    margin-top: 750px;
+    margin-left: 300px;
+}
+.contact-h2{
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contact-hr{
+margin-left: -221px;
+margin-top: -39px;
+margin-bottom: 30px;}
+.form{
+padding: 30px;
+}
+input[type='text'],input[type='email']{
+    width: 400px;
+    padding: 15px;
+    outline: none;
+}
+input[placeholder='Subject']{
+    width: 800px;
+}
+textarea{
+    width: 800px;
+    height: 100px;
+    outline: none;
+}
+textarea[placeholder='Message for me']{
+    padding: 15px;
+}
+input[type='submit']{
+    width: 150px;
+    border-radius: 7px;
+    background-color: rgb(248, 80, 80);
+    border: none;
+    height: 40px;
+    color: white;
+}
+/* start contact */
+/* start footer */
+.footer{
+    margin-top: 1387px;
+    background-color: rgb(58, 56, 56);
+    color: white;
+    padding: 30px;
+ }
+ .ic li a {
+    text-decoration:none;
+ }
+.ic{
+    float:left;
+    margin-left: 612px;
+    margin-top: -65px;
+}
+.icc{
+    margin-left: 350px;
+}
+.ic li{
+    float: left;
+    list-style-type: none;
+    margin-right: 24px;
+    margin-top: 10px;
+    margin-left: 0;
+}
+.footer p{
+    margin-left: 516px;
+    margin-top: 51px;
+}
+.ff{
+    color: red;
+    cursor: pointer;
+}
+.xxx{
+    background-color: rgb(58, 56, 56);
+    color: white;
+    width: 20px;
+    font-size: 20px;
+}
+.scroll{
+    position: relative;
+}
+.scrollToTop {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    padding: 7px 12px;
+    border-radius: 3px;
+    z-index: 1000;
+    font-size: 30px !important;
+    text-align: center;
+    color: #fff;
+    background: rgb(248, 80, 80);
+}
+
+/* end footer */
+/*start my framework */
+.container{
+    margin-top: 402px;
+    margin-left: 436px;
+    padding-left: 198px;
+    padding-right: 15px;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.h1{
+    color:red;
+    font-weight: bold;
+    font-family: 'Droid Sans' , sans-serif;
+	font-size:20px;
+    line-height: 30px;
+    margin-left: 157px;
+    margin-top: 8px;
+}
+.clearfix{
+    clear: both;
+}
+.classic-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+/* end my framework */
+/*start animation */
+@keyframes moving{
+	0%{content: ""}
+	25%{content: ""}	
+	50%{content: ""	}	
+	100%{content: ""}
+}
+ /* end animation */
+
+/* media */
+@media (max-width: 767px ){/* mobile & tablet*/
+    .hov1{
+        margin-right: -10px;
+    }
+    .hov1 li{
+     float: none;
+     display:none;
+   }
+   .container{
+    margin-top: 400px;
+    margin-left: 150px;
+    }
+   .para1{
+    margin-top: -25px;
+    margin-left: -200px;
+    font-size: 35px;
+  }
+  .header h2{
+      margin-top: 30px;
+      margin-left: -150px;
+  }
+  .para2{
+      font-size: 15px;
+      margin-left: -190px;
+      margin-top: -25px;
+  }
+   .image{
+    margin-left: 40px;
+   }
+   .paragraph{
+    margin-left: -75px;
+    width: 550px;
+   }
+   .btn2{
+       margin-top: 10px;
+       margin-left: -30px;
+   }
+   .paragraph22{
+       margin-left: 7px;
+   }
+
+   .services-container{
+       margin-left: 5px;
+   }
+   .ser1,.ser2,.ser3,.ser4{
+       width: 90%;
+   }
+   .protoflio-container{
+    margin-top: 880px;
+    margin-left: 250px;
+    }
+
+    .card1,.card2,.card3{
+        width: 100%;
+    }
+   
+    .information{
+        padding-bottom: 560px;
+     
+    }
+    .feedback-h2{
+        /* margin-left: -90px; */
+        font-size: 30px;
+    }
+    .content{
+        width: 100%;
+        margin-left: -50px;
+    }
+    .content-h2,.content img{
+        float: none;
+    }
+    .content p{
+        margin-left: 10px;
+    }
+    .li1{
+        margin-left: 160px;
+    }
+    .blog-h2{
+        margin-left: 50px;
+    }
+    .blog1,.blog2,.blog3{
+        /* margin-left: -20px; */
+        width: 70%;
+        /* margin-top: 20px; */
+        /* float: none; */
+    }
+    .contact{
+        margin-top: 1668px;
+        margin-left: 10px;
+    }
+    .contact-hr{
+        margin-left: -304px;
+    }
+    .footer{
+        margin-top: 2329px;  
+    }
+    .footer p{
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    input[placeholder='Subject'],textarea{
+        width: 398px;
+    }
+    .ic{
+    margin-left: 120px;
+    margin-top: 2px;
+    }
+    .hr{
+        margin-left: -327px;
+    }
+    .protoflio-hr{
+        margin-left: -602px;
+    }
+    .feedback-hr{
+        margin-left: -549px;
+    }
+    .feedback-h2,.content img{
+        float: none;
+    }
+  .feedback-container{
+    width: 95%;
+    margin-left: 5%;
+  }  
+  .blog-hr{
+    margin-left: -549px;
+  } 
+ }
+ @media (min-width: 768px) and (max-width:991px){ /* small screen */
+    .container{
+        margin-top: 361px;
+        margin-left: 179px;
+
+    }
+    .hov1 li{
+        width: 70px;
+   }
+   .h1{
+    margin-left: 50px; 
+   }
+ 
+   .image{
+    margin-left: 86px;}
+.paragraph{
+    margin-left: -31px;
+ width: 500px;
+}
+.paragraph22{
+    margin-left: 10px;
+    
+   }
+   .btn2{
+    margin-top: 10px;
+    margin-left: -30px;
+}
+    .ser1,.ser2,.ser3,.ser4{
+        padding: 15px;
+        width: 40%;
+        /* margin-left: 1%; */
+    }
+    .hr{
+        margin-left: -199;
+    }
+   
+    .information1{
+        margin-left: 50px;
+    }
+    .information1,.information2,.information3,.information4{
+        width: 20%;
+        margin-left:2%;
+    }
+    .contact{
+        margin-left: 11px;
+    }
+    input[type='text'],input[type='email']{
+        width: 300px;
+    }
+    input[placeholder='Subject']{
+     width: 600px;
+    }
+    textarea{
+        width: 600px;
+    }
+    .footer p{
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .ic{
+        margin-left: 150px;
+    }
+    .blog-h2{
+        margin-left: 305px;
+        }
+    .blog1,.blog2,.blog3{
+        /* margin-left: 5%; */
+        width: 30%;
+    }
+    .read{
+        font-size: 1px;
+        line-height: 4px;
+        margin-left: 1px;
+    }
+    .protoflio-container{
+        margin-top: 623px;
+        margin-left: 160px;
+        }
+    .protoflio-hr{
+        margin-left: -451px;
+    }
+    .feedback-hr{
+         margin-left: -457px;
+    }
+    .blog-hr{
+        margin-left: -298px; 
+    }
+    .card1,.card2,.card3{
+            width: 40%;    
+    }
+     .contact-hr{
+         margin-left: -331px;
+     }
+     .footer{
+         padding: 46px;
+     }
+  
+ }
+ @media (min-width: 992px) and (max-width:1199px) { /* medium screen */
+    /* .hov1 li{
+        width: 60px;
+   } */
+   .h1{
+    margin-left: 50px; 
+   }
+   .image{
+       margin-left: 10px;
+   }
+.paragraph{
+    width: 700px;
+} 
+.hr{
+    margin-left: -100px;
+}
+.protoflio-hr{
+    margin-left: -414px;
+}
+.feedback-hr{
+    margin-left: -389px;
+}
+.information{
+    margin-left: -10px;
+}
+.information1,.information2,.information3,.information4{
+    width: 20%;
+    margin-left: 5%;
+}
+.contact{
+    margin-left: 152px;}
+    .footer p{
+        margin-left: 300px;
+    }
+    .ic{
+        margin-left: 392px;
+
+    }
+ }
+ @media (min-width: 1200px){ /* large screen */
+   
+ }
+ /* end of media */
+
+
